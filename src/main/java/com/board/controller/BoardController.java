@@ -63,10 +63,10 @@ public class BoardController {
 	      
 	      //토큰발급 요청
 	      @PostMapping(value= "/api/v1/token/getToken")
-	      public ResponseEntity<String> getToken(@RequestParam(value="code")String code,
-	    		  @RequestParam(value="client_id") String client_id, @RequestParam(value="client_secret") String client_secret,
-	    		  @RequestParam(value="redirect_uri") String redirect_uri, @RequestParam(value="grant_type") String grant_type,
-	    		  HttpServletRequest servletReq
+	      public ResponseEntity<String> getToken(@RequestParam(value="code", required = false)String code,
+	    		  @RequestParam(value="client_id", required = false) String client_id, @RequestParam(value="client_secret", required = false) String client_secret,
+	    		  @RequestParam(value="redirect_uri", required = false) String redirect_uri, @RequestParam(value="grant_type", required = false) String grant_type,
+	    		  @RequestParam(value="scope", required=false) String scope, HttpServletRequest servletReq
 	    		  ) {
 	    	  // 0. 결과값을 담을 객체를 생성합니다.
 //	          HashMap<String, Object> resultMap = new HashMap<String, Object>();
@@ -77,11 +77,18 @@ public class BoardController {
 	        	  headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 	        	  
 	        	  MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
+	        	  //a. token scope : transfer
 	        	  map.add("code", code);
 	        	  map.add("client_id", client_id);
 	        	  map.add("client_secret", client_secret);
 	        	  map.add("redirect_uri", redirect_uri);
 	        	  map.add("grant_type", grant_type);
+	        	  
+	        	  //b. token sopce : oob
+	        	  map.add("client_id", client_id);
+	        	  map.add("client_secret", client_secret);
+	        	  map.add("scope", "oob");
+	        	  map.add("grant_type", "client_credentials");
 
 	        	  RestTemplate restTemplate = new RestTemplate();
 	        	  HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
