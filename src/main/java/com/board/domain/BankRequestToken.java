@@ -14,7 +14,8 @@ public class BankRequestToken {
     private String client_secret;
     private String redirect_uri;
     private String grant_type; //고정값: authorization_code
-
+    
+    public BankRequestToken(){}
 
     public void setBankRequestToken(String code, String client_id,String client_secret, String redirect_uri, String grant_type){
     	this.code = code;
