@@ -78,11 +78,14 @@ public class BoardController {
 	        	  
 	        	  MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
 	        	  //a. token scope : transfer
+	        	  /**
+	        	   * 
 	        	  map.add("code", code);
 	        	  map.add("client_id", client_id);
 	        	  map.add("client_secret", client_secret);
 	        	  map.add("redirect_uri", redirect_uri);
 	        	  map.add("grant_type", grant_type);
+	        	  */
 	        	  
 	        	  //b. token sopce : oob
 	        	  map.add("client_id", client_id);
