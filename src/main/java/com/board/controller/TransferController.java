@@ -97,46 +97,56 @@ public class TransferController {
     public void testsession(HttpServletRequest servletReq) {
     	HttpSession session = servletReq.getSession();
     	System.out.println("session >> " + session.getAttribute("access_token"));
+    }
     
+    @PostMapping("/tokenTest")
+    public void tokenTest(@RequestBody DepositRequestDTO depositRequestDto) {
+    	System.out.println("dto >>> " + depositRequestDto.getAccount_holder_name());
     }
     
     //입금이체(계좌번호)
     @PostMapping("/deposit/acnt_num")
-    public ResponseEntity<String> deposit(DepositRequestDTO depositRequestDto, HttpServletRequest servletReq) {
+    public ResponseEntity<String> deposit(@RequestBody DepositRequestDTO depositRequestDto, HttpServletRequest servletReq) {
     	log.debug("deposit API .... ");
     	ResponseEntity<String> response= null;
     	String url = base_url + "/transfer/deposit/acnt_num";
-    	HttpSession session = servletReq.getSession();
-    	session.setAttribute("access_token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJNMjAyMjAxOTYzIiwic2NvcGUiOlsib29iIl0sImlzcyI6Imh0dHBzOi8vd3d3Lm9wZW5iYW5raW5nLm9yLmtyIiwiZXhwIjoxNjc2OTU3MDMzLCJqdGkiOiIxYWJhMTI1ZS05MjVmLTQ0NGUtYmQxZS1hZTgzMzgyOWZkZTAifQ.L60s4p3y5RF6AL7IzyUelAMARnuexgR6KNEZ_hQETiM" );
-  	  // 0. 결과값을 담을 객체를 생성합니다.
+    	depositRequestDto.setAccess_token(depositRequestDto.getAccess_token());
+    	String access_token = depositRequestDto.getAccess_token();
+  	  // 0. 결과값을 담을 객체를 생성
         try {
-      	  
             //Header 및 Body 설정
             HttpHeaders headers = new HttpHeaders();
             //http 헤더 오브젝트 생성
             headers.add("Content-Type","application/json;charset=UTF-8");
-            headers.add("Authorization", "Bearer "+ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJNMjAyMjAxOTYzIiwic2NvcGUiOlsib29iIl0sImlzcyI6Imh0dHBzOi8vd3d3Lm9wZW5iYW5raW5nLm9yLmtyIiwiZXhwIjoxNjc2OTU3MDMzLCJqdGkiOiIxYWJhMTI1ZS05MjVmLTQ0NGUtYmQxZS1hZTgzMzgyOWZkZTAifQ.L60s4p3y5RF6AL7IzyUelAMARnuexgR6KNEZ_hQETiM");
+            headers.add("Authorization", "Bearer "+ access_token);
            
             HashMap<String, Object> map = new HashMap<>();
+            depositRequestDto.TestTR(
+            		depositRequestDto.getCntr_account_type(), 
+            		depositRequestDto.getCntr_account_num(), depositRequestDto.getWd_pass_phrase(), 
+            		depositRequestDto.getWd_print_content(), depositRequestDto.getName_check_option(),
+            		depositRequestDto.getReq_cnt(), depositRequestDto.getReq_list(),
+            		depositRequestDto.getTran_no(), depositRequestDto.getBank_tran_id(),
+            		depositRequestDto.getBank_code_std(), depositRequestDto.getAccount_num(),
+            		depositRequestDto.getAccount_holder_name(), depositRequestDto.getTran_dtime(),
+            		depositRequestDto.getTran_amt(), depositRequestDto.getReq_client_name(),
+            		depositRequestDto.getReq_client_bank_code(), depositRequestDto.getReq_client_account_num(),
+            		depositRequestDto.getReq_client_num(), depositRequestDto.getTransfer_purpose());
+            		
+            map.put("cntr_account_type", depositRequestDto.getCntr_account_type());
+            map.put("cntr_account_num", depositRequestDto.getCntr_account_num()); 
+            map.put("wd_pass_phrase", depositRequestDto.getWd_pass_phrase());
+            map.put("wd_print_content", depositRequestDto.getWd_print_content());
+            map.put("name_check_option", depositRequestDto.getName_check_option());
+            map.put("tran_dtime", depositRequestDto.getTran_dtime()); 
+            System.out.println("날짜 >>> "+depositRequestDto.getTran_dtime());
+            map.put("req_cnt", "1"); //22년 07월 부터 다건 허용 안 함. 1밖에 허용 안함.
             
-            
-             //파라미터 @RequestBody 선언 후, DTO 사용으로 변경하기...
-//            depositRequestDto.TestTR(url, url, url, url, url, url, url, null, url, url, url, url, url, url, url, url, url, url, url, url);
-//            depositRequestDto.setCntr_account_num(depositRequestDto.getCntr_account_num());
-            
-            
-            map.put("cntr_account_type", "N");
-            map.put("cntr_account_num", "100000000001");
-            map.put("wd_pass_phrase", "NONE");
-            map.put("wd_print_content", "환불금액");
-            map.put("name_check_option", "off");
-            map.put("tran_dtime", "20201001150133");
-            map.put("req_cnt", "1");
-            
-            String jsonArrayData= "[{'tran_no':'1', "
-            		+ "'bank_tran_id':'M202201963U16134600A',"
-            		+ "'bank_code_std':'004',"
-            		+ "'account_num':'61250201399911',"
+            //리팩토링 필요...
+            String jsonArrayData= "[{'tran_no':'"+ depositRequestDto.getTran_no() +"', "
+            		+ "'bank_tran_id':'" + depositRequestDto.getBank_tran_id() +"'," //해당 값이 중복되면 안됨.. bank_tran_id는 하나인데?
+            		+ "'bank_code_std':'" + depositRequestDto.getBank_code_std() + "',"
+            		+ "'account_num':'61250201399911'," 
             		+ "'account_holder_name':'파리바게트',"
             		+ "'print_content':'빵결제',"
             		+ "'tran_amt':'000000004800',"

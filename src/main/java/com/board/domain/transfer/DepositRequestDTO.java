@@ -2,10 +2,12 @@ package com.board.domain.transfer;
 
 import java.util.List;
 
+import com.board.domain.BankResponseToken;
+
 import lombok.Data;
 
 @Data
-public class DepositRequestDTO {
+public class DepositRequestDTO extends BankResponseToken{
 
 	/**
 	 * N: 계좌, C: 계정 
@@ -46,7 +48,7 @@ public class DepositRequestDTO {
 	/**
 	 * 입금요청목록
 	 */
-	private List req_list;
+	private String req_list;
 	
 	/**
 	 * 거래순번
@@ -117,7 +119,7 @@ public class DepositRequestDTO {
 	
 
 	public void TestTR(String cntr_account_type, String cntr_account_num, String wd_pass_phrase,
-			String wd_print_content, String name_check_option, String fintech_use_num, String req_cnt, List req_list,
+			String wd_print_content, String name_check_option, String req_cnt, String req_list,
 			String tran_no, String bank_tran_id, String bank_code_std, String account_num, String account_holder_name,
 			String tran_dtime, String tran_amt, String req_client_name, String req_client_bank_code,
 			String req_client_account_num, String req_client_num, String transfer_purpose) {
@@ -126,7 +128,6 @@ public class DepositRequestDTO {
 		this.wd_pass_phrase = wd_pass_phrase;
 		this.wd_print_content = wd_print_content;
 		this.name_check_option = name_check_option;
-		this.fintech_use_num = fintech_use_num;
 		this.req_cnt = req_cnt;
 		this.req_list = req_list;
 		this.tran_no = tran_no;

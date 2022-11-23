@@ -13,7 +13,7 @@ public class BankRequestToken {
     private String client_id;
     private String client_secret;
     private String redirect_uri;
-    private String grant_type; //고정값: authorization_code
+    private String grant_type;
     private String scope;
     
     public BankRequestToken(){}
