@@ -14,6 +14,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -90,6 +91,13 @@ public class TransferController {
         }
         	log.debug(">> " + response);
         return response;
+    }
+
+    @GetMapping("/sessionTest")
+    public void testsession(HttpServletRequest servletReq) {
+    	HttpSession session = servletReq.getSession();
+    	System.out.println("session >> " + session.getAttribute("access_token"));
+    
     }
     
     //입금이체(계좌번호)

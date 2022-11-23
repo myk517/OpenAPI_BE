@@ -1,0 +1,314 @@
+2022-11-23 16:00:35,623 [Thread-127] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:00:35,682 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:00:35,771 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:00:35,773 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:00:35,811 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:00:35,823 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 139 ms
+2022-11-23 16:00:35,850 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:00:35,919 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:00:35,925 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:00:35,928 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:00:38,891 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:00:38,891 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
+2022-11-23 16:01:02,904 [Thread-131] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:01:02,963 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:01:03,051 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:01:03,053 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:01:03,093 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:01:03,107 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 142 ms
+2022-11-23 16:01:03,134 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:01:03,203 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:01:03,209 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:01:03,212 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:04:30,839 [Thread-135] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:30,894 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:04:30,982 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:04:30,984 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:04:31,024 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:04:31,036 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 139 ms
+2022-11-23 16:04:31,061 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:31,132 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:04:31,138 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:04:31,141 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:04:43,846 [Thread-139] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:43,905 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:04:43,994 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:04:43,996 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:04:44,035 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:04:44,049 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 141 ms
+2022-11-23 16:04:44,073 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:44,144 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:04:44,150 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:04:44,152 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:04:47,649 [Thread-143] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:47,704 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:04:47,792 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:04:47,794 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:04:47,833 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:04:47,848 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 142 ms
+2022-11-23 16:04:47,873 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:04:47,944 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:04:47,950 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:04:47,953 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:04:50,367 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:04:50,368 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
+2022-11-23 16:05:24,133 [Thread-147] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:05:24,203 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:05:24,302 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:05:24,304 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:05:24,344 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:05:24,356 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 151 ms
+2022-11-23 16:05:24,383 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:05:24,473 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:05:24,479 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:05:24,482 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:05:25,673 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:05:25,674 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
+2022-11-23 16:06:52,394 [Thread-151] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:06:52,448 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:06:52,537 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:06:52,539 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:06:52,579 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:06:52,594 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 143 ms
+2022-11-23 16:06:52,620 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:06:52,690 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:06:52,697 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:06:52,700 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:06:57,245 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:06:57,246 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
+2022-11-23 16:08:34,553 [Thread-155] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:08:34,609 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:08:34,700 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:08:34,702 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:08:34,743 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:08:34,757 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 146 ms
+2022-11-23 16:08:34,786 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:08:34,856 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:08:34,862 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:08:34,865 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:08:40,326 [Thread-159] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:08:40,384 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:08:40,477 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:08:40,478 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:08:40,520 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:08:40,532 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 145 ms
+2022-11-23 16:08:40,555 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:08:40,625 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:08:40,631 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:08:40,634 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:08:42,872 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:08:42,873 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
+2022-11-23 16:09:29,444 [Thread-163] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:09:29,500 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:09:29,591 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:09:29,592 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:09:29,632 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:09:29,644 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 142 ms
+2022-11-23 16:09:29,671 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:09:29,739 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:09:29,745 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:09:29,748 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:09:41,366 [Thread-167] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:09:41,423 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:09:41,511 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:09:41,512 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:09:41,551 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:09:41,565 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 140 ms
+2022-11-23 16:09:41,590 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:09:41,663 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:09:41,669 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:09:41,672 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:10:17,853 [Thread-171] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:17,909 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:10:17,995 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:10:17,997 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:10:18,035 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:10:18,048 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 137 ms
+2022-11-23 16:10:18,071 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:18,140 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:10:18,146 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:10:18,149 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:10:22,344 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:10:22,346 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 2 ms
+2022-11-23 16:10:35,873 [Thread-175] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:35,930 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:10:36,017 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:10:36,019 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:10:36,058 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:10:36,071 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 139 ms
+2022-11-23 16:10:36,097 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:36,167 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:10:36,173 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:10:36,176 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:10:56,007 [Thread-179] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:56,068 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:10:56,158 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:10:56,160 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:10:56,197 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:10:56,211 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 141 ms
+2022-11-23 16:10:56,235 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:10:56,306 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:10:56,312 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:10:56,315 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:16:52,020 [Thread-183] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:16:52,077 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:16:52,165 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:16:52,166 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:16:52,205 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:16:52,217 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 138 ms
+2022-11-23 16:16:52,242 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:16:52,312 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:16:52,318 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:16:52,321 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:17:00,789 [Thread-187] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:17:00,847 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:17:00,941 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:17:00,943 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:17:00,981 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:17:00,994 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 143 ms
+2022-11-23 16:17:01,018 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:17:01,090 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:17:01,095 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:17:01,098 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:25:54,658 [Thread-191] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:25:54,717 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:25:54,805 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:25:54,806 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:25:54,845 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:25:54,857 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 138 ms
+2022-11-23 16:25:54,882 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:25:54,954 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:25:54,959 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:25:54,962 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:27:27,454 [Thread-195] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:27:27,511 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:27:27,602 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:27:27,604 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:27:27,643 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:27:27,657 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 143 ms
+2022-11-23 16:27:27,683 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:27:27,755 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:27:27,761 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:27:27,763 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:28:45,995 [Thread-199] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:28:46,053 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:28:46,143 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:28:46,145 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:28:46,182 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:28:46,195 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 140 ms
+2022-11-23 16:28:46,220 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:28:46,292 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:28:46,297 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:28:46,300 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:31:02,679 [Thread-203] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:31:02,737 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:31:02,829 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:31:02,831 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:31:02,870 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:31:02,883 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 144 ms
+2022-11-23 16:31:02,909 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:31:02,983 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:31:02,989 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:31:02,991 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:31:59,612 [Thread-207] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:31:59,670 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:31:59,761 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:31:59,762 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:31:59,806 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:31:59,819 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 147 ms
+2022-11-23 16:31:59,843 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:31:59,916 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:31:59,922 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:31:59,925 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:33:59,868 [Thread-211] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:33:59,932 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:34:00,024 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:34:00,026 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:34:00,066 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:34:00,080 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 145 ms
+2022-11-23 16:34:00,104 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:34:00,176 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:34:00,182 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:34:00,185 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:35:48,944 [Thread-215] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:35:49,003 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:35:49,095 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:35:49,097 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:35:49,138 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:35:49,150 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 144 ms
+2022-11-23 16:35:49,175 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:35:49,248 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:35:49,254 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:35:49,257 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:36:10,158 [Thread-219] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:36:10,220 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:36:10,313 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:36:10,315 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:36:10,356 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:36:10,369 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 146 ms
+2022-11-23 16:36:10,394 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:36:10,466 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:36:10,472 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:36:10,475 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:37:11,167 [Thread-223] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:11,226 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:37:11,327 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:37:11,329 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:37:11,371 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:37:11,387 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 159 ms
+2022-11-23 16:37:11,414 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:11,490 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:37:11,496 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:37:11,499 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:37:12,962 [Thread-227] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:13,022 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:37:13,111 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:37:13,113 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:37:13,150 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:37:13,166 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 141 ms
+2022-11-23 16:37:13,189 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:13,260 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:37:13,266 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:37:13,269 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:37:49,426 [Thread-231] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:49,496 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:37:49,629 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:37:49,631 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:37:49,671 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:37:49,685 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 187 ms
+2022-11-23 16:37:49,713 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:37:49,798 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:37:49,805 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:37:49,809 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:51:13,670 [Thread-235] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:51:13,748 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:51:13,883 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:51:13,885 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:51:13,925 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:51:13,938 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 188 ms
+2022-11-23 16:51:13,962 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:51:14,040 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:51:14,046 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:51:14,049 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:54:26,706 [Thread-239] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:54:26,769 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:54:26,863 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:54:26,865 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:54:26,907 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:54:26,920 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 148 ms
+2022-11-23 16:54:26,944 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:54:27,031 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:54:27,037 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:54:27,040 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:54:34,603 [Thread-243] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(destroy:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:54:34,661 [restartedMain] ERROR org.springframework.boot.context.logging.LoggingApplicationListener(lambda$getLogLevelConfigurer$2:396) - Cannot set level 'INFO' for 'null'
+2022-11-23 16:54:34,749 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-23 16:54:34,751 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-23 16:54:34,790 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-11-23 16:54:34,802 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 139 ms
+2022-11-23 16:54:34,823 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(buildNativeEntityManagerFactory:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-23 16:54:34,895 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2022-11-23 16:54:34,900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-23 16:54:34,903 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2022-11-23 16:54:44,256 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-11-23 16:54:44,257 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
