@@ -3,11 +3,9 @@ package com.board.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -26,6 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.board.domain.BankReponseToken;
 import com.board.domain.BoardDTO;
 import com.board.service.BoardService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -68,6 +67,7 @@ public class BoardController {
 	    		  @RequestParam(value="redirect_uri", required = false) String redirect_uri, @RequestParam(value="grant_type", required = false) String grant_type,
 	    		  @RequestParam(value="scope", required=false) String scope, HttpServletRequest servletReq
 	    		  ) {
+	    	  String url = base_url + "/oauth/2.0/token";
 	    	  // 0. 결과값을 담을 객체를 생성합니다.
 //	          HashMap<String, Object> resultMap = new HashMap<String, Object>();
 	          ResponseEntity<String> response= null;
@@ -76,39 +76,60 @@ public class BoardController {
 	        	  HttpHeaders headers = new HttpHeaders();
 	        	  headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 	        	  
-	        	  MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
-	        	  //a. token scope : transfer
-	        	  /**
-	        	   * 
-	        	  map.add("code", code);
-	        	  map.add("client_id", client_id);
-	        	  map.add("client_secret", client_secret);
-	        	  map.add("redirect_uri", redirect_uri);
-	        	  map.add("grant_type", grant_type);
-	        	  */
+	        	  MultiValueMap<String, String> map= new LinkedMultiValueMap<>(); //
+//	        	  HashMap<String, String> map = new HashMap<>();
 	        	  
-	        	  //b. token sopce : oob
-	        	  map.add("client_id", client_id);
-	        	  map.add("client_secret", client_secret);
-	        	  map.add("scope", "oob");
-	        	  map.add("grant_type", "client_credentials");
-
+	        	  //oob 토큰 발급 scope : oob
+	        	  if(scope != null) {
+	        		  log.debug("OOb Token Api...");
+	        		  map.add("client_id", client_id);
+		        	  map.add("client_secret", client_secret);
+		        	  map.add("scope", scope);
+		        	  map.add("grant_type", grant_type);
+		        	  
+//		        	  map.put("client_id", client_id);
+//		        	  map.put("client_secret", client_secret);
+//		        	  map.put("scope", scope);
+//		        	  map.put("grant_type", grant_type);
+	        		  
+	        	  } else { //일반사용자 토큰 발급 scope: transfer
+	        		  log.debug("Transfer Token Api...");
+	        		  map.add("code", code);
+		        	  map.add("client_id", client_id);
+		        	  map.add("client_secret", client_secret);
+		        	  map.add("redirect_uri", redirect_uri);
+		        	  map.add("grant_type", grant_type);
+		        	  
+//		        	  map.put("code", code);
+//		        	  map.put("client_id", client_id);
+//		        	  map.put("client_secret", client_secret);
+//		        	  map.put("redirect_uri", redirect_uri);
+//		        	  map.put("grant_type", grant_type);
+	        	  }
+	        	  
 	        	  RestTemplate restTemplate = new RestTemplate();
-	        	  HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
-
 	        	  
-	        	  response = restTemplate.postForEntity( "https://testapi.openbanking.or.kr/oauth/2.0/token", request , String.class );
+	        	  
+	        	  HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
+//	        	  HttpEntity<HashMap<String, String>> request = new HttpEntity<HashMap<String, String>>(map, headers);
+	        	  ObjectMapper mapperObj = new ObjectMapper();
+	        	  String jsonResp = mapperObj.writeValueAsString(request);
+	        	  System.out.println("jsonResp >>> " + jsonResp);
+	        	  System.out.println("request >>> " + request);
+	        	  response = restTemplate.postForEntity( url, request , String.class );
 //	        	  BankReponseToken response = restTemplate.postForEntity("https://testapi.openbanking.or.kr/oauth/2.0/token", request , BankReponseToken.class ).getBody(); // null 반환...
 	        	  
 //	        	  resultMap.put("response", response);
 	        	  
+	        	  /**
+	        	   * 
 	        	  bankResponseToken.getAccess_token();
 	        	  bankResponseToken.setAccess_token(response.toString());
 	        	  
 	        	  JSONObject jObject = new JSONObject(response.getBody());
 	        	  if(jObject.getString("access_token")!=null) {
 	        		  String access_token = jObject.getString("access_token");
-	        	  } 
+	        	  }
 	        	  
 	        	  System.out.println("access_token>>>> " + access_token);
 //	        	  String rsp_message = jObject.getString("rsp_message");
@@ -117,15 +138,18 @@ public class BoardController {
 	        	  HttpSession session = servletReq.getSession(); // 세션을 열어준다.
 	        	  session.invalidate(); //세션 초기화
 	        	  session.setAttribute("access_token", jObject.getString("access_token"));
+	        	   */
 	        	  
 	          }
 	          catch(Exception e) {
 	        	  e.printStackTrace();
 	          }
 	          
-	          	System.out.println(">> " + response);
+	          	log.debug("getToken>> " + response);
+	          	System.out.println("getToken >> " + response);
 //	          	System.out.println(">> " + resultMap);
 	          return response;
 	      }
+	      
 	}
 

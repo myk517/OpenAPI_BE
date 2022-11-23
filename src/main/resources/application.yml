@@ -1,3 +1,6 @@
 spring:
   profiles:
     include: openbank
+    
+logging:
+  config: classpath:Log4j2.xml
