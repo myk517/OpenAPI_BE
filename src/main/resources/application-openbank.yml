@@ -2,6 +2,6 @@ openbank:
   useCode : M202201963
   client-id : 9815d321-e0e1-462c-ad06-9cfa5d46c53c
   client-secret : 39831a41-c3d7-47f2-b72f-bc82c4ca5e53
-  bank-tran-id : M202201963U008140230 
+  client_use_code : M202201963 
   fintech-use-num : 120220196388941173137012
   base-url : https://testapi.openbanking.or.kr/v2.0

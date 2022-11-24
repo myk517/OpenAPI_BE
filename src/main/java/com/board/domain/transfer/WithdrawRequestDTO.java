@@ -1,9 +1,11 @@
 package com.board.domain.transfer;
 
+import com.board.domain.BankResponseToken;
+
 import lombok.Data;
 
 @Data
-public class WithdrawRequestDTO {
+public class WithdrawRequestDTO extends BankResponseToken {
 
 	/**
 	 * 은행고유번호 M202201963U008140230

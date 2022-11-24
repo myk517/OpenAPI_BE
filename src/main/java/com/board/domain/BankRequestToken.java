@@ -1,6 +1,6 @@
 package com.board.domain;
 
-import lombok.Builder;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -8,12 +8,22 @@ public class BankRequestToken {
 	/**
 	 * scope(sa, transfer, obb)에 따라 param이 다르다.
 	 */
-	
+	@JsonProperty("code")
     private String code;
+	
+	@JsonProperty("client_id")
     private String client_id;
+	
+	@JsonProperty("client_secret")
     private String client_secret;
+	
+	@JsonProperty("redirect_uri")
     private String redirect_uri;
+	
+	@JsonProperty("grant_type")
     private String grant_type;
+	
+	@JsonProperty("scope")
     private String scope;
     
     public BankRequestToken(){}

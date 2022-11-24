@@ -33,25 +33,23 @@ import lombok.extern.slf4j.Slf4j;
 @CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*" , allowCredentials="true")
 @RequestMapping(value = "/api/v1/transfer")
 public class TransferController {
-	
-	@Value("${openbank.bank-tran-id}")
-	private String bankTranId;
+	//U008140230
+	@Value("${openbank.client_use_code}")
+	private String clientUseCode; //이용기관코드
 	@Value("${openbank.fintech-use-num}")
 	private String fintechUseNum;
 	@Value("${openbank.base-url}")
 	private String base_url;
+	private String bankTranId;
 	
-//	public BankReponseToken brt = new BankReponseToken();
-//	public String accessToken = brt.getAccess_token();
 	
-	  //출금이체(핀넘버)
+	//출금이체(핀넘버)
     @PostMapping("/withdraw/fin_num")
-    public ResponseEntity<String> withdraw(@RequestBody WithdrawRequestDTO withdrawRequestDto, HttpServletRequest servletReq) {
+    public ResponseEntity<String> withdraw(@RequestBody WithdrawRequestDTO reqDto) {
     	log.debug("withdraw API ....");
     	ResponseEntity<String> response= null;
+    	reqDto.setAccess_token(reqDto.getAccess_token());
     	String url = base_url + "/transfer/withdraw/fin_num";
-    	HttpSession session = servletReq.getSession();
-    	session.setAttribute("access_token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDEzOTA4Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NzY4NzU1NDcsImp0aSI6IjkzNzJlZjIwLTFiODYtNDgxNy04NmUyLTM1YWVjYzdlZDJjMSJ9.RIrzBYjbHQNeUd0-w20dUv77C4Ztx9zhpZamwQSFKHM\",\"token_type\":\"Bearer\",\"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDEzOTA4Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2Nzc3Mzk1NDcsImp0aSI6ImU3YzY4ZmQ3LTIwNzktNDBkYi05MDRmLTE2Y2Y2NjEyNWE5YSJ9.apfBgGr8nWum6-tZBdTf9roCoOXh3e057ePWOnNRKMk" );
   	  // 0. 결과값을 담을 객체를 생성합니다.
         try {
       	  
@@ -59,26 +57,27 @@ public class TransferController {
             HttpHeaders headers = new HttpHeaders();
             //http 헤더 오브젝트 생성
             headers.add("Content-Type","application/json;charset=UTF-8");
-            headers.add("Authorization", "Bearer "+ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDEzOTA4Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NzY4OTYxOTMsImp0aSI6IjFiMjhhZWNhLTA4MmItNDFkMS1hYmM3LWFkNzU1MTAyOThlZiJ9.1sGpnZ5KbeFuc2SzQG2UfxoVEJyzCPNvRAWJzqxL74Q");
+            headers.add("Authorization", "Bearer "+ reqDto.getAccess_token());
            
             HashMap<String, String> map = new HashMap<>();
-             
-            map.put("bank_tran_id", "M202201963U008140230"); //중복된 고유번호 에러 -> M202201963U00814023"1" 로 하니까 정상처리 됨..
-            map.put("cntr_account_type", "N");
-            map.put("cntr_account_num", "100000000002");
-            map.put("dps_print_content", "쇼핑몰환불");
-            map.put("fintech_use_num", "120220196388941173137012");
-            map.put("wd_print_content", "오픈뱅킹출금");
-            map.put("tran_amt", "1000");
-            map.put("tran_dtime", "20201001150133");
-            map.put("req_client_name", "김미영");
-            map.put("req_client_bank_code", "004");
+            
+            map.put("bank_tran_id", makeBankTranId());
+            map.put("cntr_account_type", reqDto.getCntr_account_type());
+            map.put("cntr_account_num", reqDto.getCntr_account_num());
+            map.put("dps_print_content", reqDto.getDps_print_content());
+            map.put("fintech_use_num", fintechUseNum);
+            map.put("wd_print_content", reqDto.getWd_print_content());
+            map.put("tran_amt", reqDto.getTran_amt());
+            map.put("tran_dtime", reqDto.getTran_dtime());
+            map.put("req_client_name", reqDto.getReq_client_name());
+            map.put("req_client_bank_code", reqDto.getReq_client_bank_code());
             map.put("req_client_account_num", "61250201399911");
             map.put("req_client_num", "HONGGILDONG1234");
-            map.put("transfer_purpose", "RC");
-            
-//            withdrawRequestDto.SetWithdrawRC(bankTranId, "N", "100000000002", "쇼핑몰환불", fintechUseNum, "오픈뱅킹출금","1000",
-//            "20201001150133","김미영","004","61250201399911", "HONGGILDONG1234", "RC");
+            map.put("transfer_purpose", "RC"); //
+
+            //하위 가맹점이 있을 땐 어떻게 할까?
+            //일단 다 map.put 해두고 파라미터로 안넘겨도 되는 것은 null로 해석되어도 상관없나? 아니면 아예 parameter로 넘기지를 말아야 하나?(아예 map.put을 안해야 하나?) 그러면 
+            // transfer_purpose에 따라 if/else로 나누어서 map.put을 구분해야 함?
             
             
            RestTemplate restTemplate = new RestTemplate();
@@ -93,25 +92,14 @@ public class TransferController {
         return response;
     }
 
-    @GetMapping("/sessionTest")
-    public void testsession(HttpServletRequest servletReq) {
-    	HttpSession session = servletReq.getSession();
-    	System.out.println("session >> " + session.getAttribute("access_token"));
-    }
-    
-    @PostMapping("/tokenTest")
-    public void tokenTest(@RequestBody DepositRequestDTO depositRequestDto) {
-    	System.out.println("dto >>> " + depositRequestDto.getAccount_holder_name());
-    }
-    
     //입금이체(계좌번호)
     @PostMapping("/deposit/acnt_num")
-    public ResponseEntity<String> deposit(@RequestBody DepositRequestDTO depositRequestDto, HttpServletRequest servletReq) {
+    public ResponseEntity<String> deposit(@RequestBody DepositRequestDTO reqDto) {
     	log.debug("deposit API .... ");
     	ResponseEntity<String> response= null;
     	String url = base_url + "/transfer/deposit/acnt_num";
-    	depositRequestDto.setAccess_token(depositRequestDto.getAccess_token());
-    	String access_token = depositRequestDto.getAccess_token();
+    	reqDto.setAccess_token(reqDto.getAccess_token());
+    	String access_token = reqDto.getAccess_token();
   	  // 0. 결과값을 담을 객체를 생성
         try {
             //Header 및 Body 설정
@@ -121,31 +109,31 @@ public class TransferController {
             headers.add("Authorization", "Bearer "+ access_token);
            
             HashMap<String, Object> map = new HashMap<>();
-            depositRequestDto.TestTR(
-            		depositRequestDto.getCntr_account_type(), 
-            		depositRequestDto.getCntr_account_num(), depositRequestDto.getWd_pass_phrase(), 
-            		depositRequestDto.getWd_print_content(), depositRequestDto.getName_check_option(),
-            		depositRequestDto.getReq_cnt(), depositRequestDto.getReq_list(),
-            		depositRequestDto.getTran_no(), depositRequestDto.getBank_tran_id(),
-            		depositRequestDto.getBank_code_std(), depositRequestDto.getAccount_num(),
-            		depositRequestDto.getAccount_holder_name(), depositRequestDto.getTran_dtime(),
-            		depositRequestDto.getTran_amt(), depositRequestDto.getReq_client_name(),
-            		depositRequestDto.getReq_client_bank_code(), depositRequestDto.getReq_client_account_num(),
-            		depositRequestDto.getReq_client_num(), depositRequestDto.getTransfer_purpose());
+            reqDto.TestTR(
+            		reqDto.getCntr_account_type(), 
+            		reqDto.getCntr_account_num(), reqDto.getWd_pass_phrase(), 
+            		reqDto.getWd_print_content(), reqDto.getName_check_option(),
+            		reqDto.getReq_cnt(), reqDto.getReq_list(),
+            		reqDto.getTran_no(), reqDto.getBank_tran_id(),
+            		reqDto.getBank_code_std(), reqDto.getAccount_num(),
+            		reqDto.getAccount_holder_name(), reqDto.getTran_dtime(),
+            		reqDto.getTran_amt(), reqDto.getReq_client_name(),
+            		reqDto.getReq_client_bank_code(), reqDto.getReq_client_account_num(),
+            		reqDto.getReq_client_num(), reqDto.getTransfer_purpose());
             		
-            map.put("cntr_account_type", depositRequestDto.getCntr_account_type());
-            map.put("cntr_account_num", depositRequestDto.getCntr_account_num()); 
-            map.put("wd_pass_phrase", depositRequestDto.getWd_pass_phrase());
-            map.put("wd_print_content", depositRequestDto.getWd_print_content());
-            map.put("name_check_option", depositRequestDto.getName_check_option());
-            map.put("tran_dtime", depositRequestDto.getTran_dtime()); 
-            System.out.println("날짜 >>> "+depositRequestDto.getTran_dtime());
+            map.put("cntr_account_type", reqDto.getCntr_account_type());
+            map.put("cntr_account_num", reqDto.getCntr_account_num()); 
+            map.put("wd_pass_phrase", reqDto.getWd_pass_phrase());
+            map.put("wd_print_content", reqDto.getWd_print_content());
+            map.put("name_check_option", reqDto.getName_check_option());
+            map.put("tran_dtime", reqDto.getTran_dtime()); 
             map.put("req_cnt", "1"); //22년 07월 부터 다건 허용 안 함. 1밖에 허용 안함.
             
+            System.out.println("bankTranId>> "+makeBankTranId());
             //리팩토링 필요...
-            String jsonArrayData= "[{'tran_no':'"+ depositRequestDto.getTran_no() +"', "
-            		+ "'bank_tran_id':'" + depositRequestDto.getBank_tran_id() +"'," //해당 값이 중복되면 안됨.. bank_tran_id는 하나인데?
-            		+ "'bank_code_std':'" + depositRequestDto.getBank_code_std() + "',"
+            String jsonArrayData= "[{'tran_no':'"+ reqDto.getTran_no() +"', "
+            		+ "'bank_tran_id':'" + makeBankTranId() +"',"
+            		+ "'bank_code_std':'" + reqDto.getBank_code_std() + "',"
             		+ "'account_num':'61250201399911'," 
             		+ "'account_holder_name':'파리바게트',"
             		+ "'print_content':'빵결제',"
@@ -159,7 +147,6 @@ public class TransferController {
             List<Object> list = jsonArray.toList();
             
             map.put("req_list", list);
-            
             
            RestTemplate restTemplate = new RestTemplate();
            HttpEntity<HashMap<String, Object>> request = new HttpEntity<HashMap<String, Object>>(map, headers);
@@ -175,5 +162,11 @@ public class TransferController {
         return response;
     }
     
+    public String makeBankTranId() {
+		//난수9자리
+		String num = String.valueOf((int)Math.floor(Math.random()*1000000000));
+		bankTranId = clientUseCode+"U"+num; 
+		return bankTranId;
+	}	
     
 }
